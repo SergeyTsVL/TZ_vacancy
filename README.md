@@ -27,10 +27,10 @@ python manage.py createsuperuser
 
 ![Uploading 1.png…](https://github.com/SergeyTsVL/TZ_vacancy/blob/main/images/4.png)
 
-# Заходим во вкладку "регистрация", регистрируемся.
+# Редактируем заявку.
 
 ![Uploading 1.png…](https://github.com/SergeyTsVL/TZ_vacancy/blob/main/images/5.png)
 
-# Заходим во вкладку "регистрация", регистрируемся.
+# Управляем заявками пользователей как админ сайта.
 
 ![Uploading 1.png…](https://github.com/SergeyTsVL/TZ_vacancy/blob/main/images/6.png)
