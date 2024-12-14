@@ -13,7 +13,7 @@ python manage.py createsuperuser
 
 # Так выглядит начальная страница проекта
 
-![Uploading 1.png…](https://github.com/SergeyTsVL/DjangoProject/blob/1.2/images/6.png)
+![Uploading 1.png…](https://github.com/SergeyTsVL/TZ_vacancy/blob/main/images/1.png)
 
 # Заходим во вкладку "регистрация", регистрируемся.
 
