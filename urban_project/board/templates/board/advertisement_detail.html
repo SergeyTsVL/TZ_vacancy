@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ advertisement.name }}</h1>
+<p>{{ advertisement.order }}</p>
+<div style="display:flex; flex-direction:column">
+    <span>
+        <a href="{% url 'board:edit_advertisement' advertisement.pk %}"><button type="submit">Редактировать</button></a>
+        <a>Редактирование не возможно если заявка изменила статус!</a>
+    </span>
+    <span>
+        <a href="{% url 'board:delete_advertisement' advertisement.pk %}"><button type="submit">Удалить</button></a>
+    </span>
+
+</div>
+{% endblock %}

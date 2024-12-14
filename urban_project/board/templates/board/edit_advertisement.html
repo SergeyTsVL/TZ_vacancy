@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Редактирование объявления</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+    <div class="fieldWrapper">
+        <label>Имя: </label>
+        {{ form.name }}
+    </div>
+    <div class="fieldWrapper">
+        <label>Номер телефона: </label>
+        {{ form.telephone }}
+    </div>
+    <div class="fieldWrapper">
+        <label>Заказ: </label>
+        {{ form.order }}
+    </div>
+    <div class="fieldWrapper">
+        <label>Адрес доставки: </label>
+        {{ form.delivery_address }}
+    </div>
+
+    <button type="submit">Сохранить изменения</button>
+</form>
+{% endblock %}

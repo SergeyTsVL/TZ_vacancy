@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Список заявок на доставку</h1>
+
+{% if user.is_authenticated %}
+    <a href="{% url 'board:add_advertisement' %}"><button type="submit">Добавить заявку</button></a>
+
+{% endif %}
+<ul>
+  {% for advertisement in advertisements %}
+    <h2>
+      <a href="{% url 'board:advertisement_detail' pk=advertisement.pk %}">Заявка №: {{ advertisement.id }} /
+        Будут доставлены: {{ advertisement.order }} </a>
+    </h2>
+    <li>
+      <a href="{% url 'board:advertisement_detail' pk=advertisement.pk %}">Дата приема заявки: {{ advertisement.created_at }} /
+        Дата доставки: {{ advertisement.delivery_date }}</a>
+    </li>
+    <li>
+      <a href="{% url 'board:advertisement_detail' pk=advertisement.pk %}">Статус доставки: "{{ advertisement.status }}"</a>
+    </li>
+
+  {% endfor %}
+</ul>
+
+{% endblock %}
