@@ -19,11 +19,11 @@ python manage.py createsuperuser
 
 ![Uploading 1.png…](https://github.com/SergeyTsVL/TZ_vacancy/blob/main/images/2.png)
 
-# Заходим во вкладку "регистрация", регистрируемся.
+# Так выглядит список заявок на доставку.
 
 ![Uploading 1.png…](https://github.com/SergeyTsVL/TZ_vacancy/blob/main/images/3.png)
 
-# Заходим во вкладку "регистрация", регистрируемся.
+# Входим в заявку.
 
 ![Uploading 1.png…](https://github.com/SergeyTsVL/TZ_vacancy/blob/main/images/4.png)
 
