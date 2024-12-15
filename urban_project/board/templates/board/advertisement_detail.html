@@ -6,10 +6,16 @@
 <div style="display:flex; flex-direction:column">
     <span>
         <a href="{% url 'board:edit_advertisement' advertisement.pk %}"><button type="submit">Редактировать</button></a>
-        <a>Редактирование не возможно если заявка изменила статус!</a>
+
     </span>
     <span>
         <a href="{% url 'board:delete_advertisement' advertisement.pk %}"><button type="submit">Удалить</button></a>
+    </span>
+    <span>
+        <a>Редактирование удаление не возможно если заявка изменила статус!</a>
+    </span>
+    <span>
+        <a>Статусы блокирования: "товар передан в доставку", "товар доставлен".</a>
     </span>
 
 </div>
