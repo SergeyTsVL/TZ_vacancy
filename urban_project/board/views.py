@@ -110,9 +110,12 @@ def delete_advertisement(request, pk):
     :return:
     """
     advertisement = Advertisement.objects.get(pk=pk)
-    if request.method == "POST":
-        advertisement.delete()
-        return redirect('board:advertisement_list')
+    if advertisement.status != 'товар передан в доставку' and advertisement.status != 'товар доставлен':
+        if request.method == "POST":
+            advertisement.delete()
+            return redirect('board:advertisement_list')
+        else:
+            None
+        return render(request, 'board/delete_advertisement.html', {'advertisement': advertisement})
     else:
-        None
-    return render(request, 'board/delete_advertisement.html', {'advertisement': advertisement})
+        return redirect('board:advertisement_list')
